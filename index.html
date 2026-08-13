@@ -154,22 +154,19 @@
     }
 
     function setLanguage(lang) {
-      const arabic = lang === "ar";
+      const isArabic = lang === "ar";
 
-      document.documentElement.lang = arabic ? "ar" : "en";
-      document.documentElement.dir = arabic ? "rtl" : "ltr";
-      document.body.classList.toggle("rtl", arabic);
+      document.documentElement.lang = isArabic ? "ar" : "en";
+      document.documentElement.dir = isArabic ? "rtl" : "ltr";
+      document.body.classList.toggle("rtl", isArabic);
 
       translatable.forEach((el) => {
-        const value = arabic ? el.dataset.ar : el.dataset.en;
+        const value = isArabic ? el.dataset.ar : el.dataset.en;
+
         if (el.classList.contains("sub")) {
-          if (arabic) {
-            el.innerHTML = 'يمكنك إبلاغنا بـ <strong>ساعات العمل الجديدة</strong><span class="or">أو</span>تعلّم كيفية تغيير ساعات العمل <strong>بنفسك</strong>';
-          } else {
-            el.innerHTML = 'You can inform us with your <strong>NEW Working Hours</strong><span class="or">or</span>Learn How to Change the Working Hours by <strong>YOURSELF</strong>';
-          }
-        } else if (el.tagName === "TITLE") {
-          el.textContent = value;
+          el.innerHTML = isArabic
+            ? 'يمكنك إبلاغنا بـ <strong>ساعات العمل الجديدة</strong><span class="or">أو</span>تعلّم كيفية تغيير ساعات العمل <strong>بنفسك</strong>'
+            : 'You can inform us with your <strong>NEW Working Hours</strong><span class="or">or</span>Learn How to Change the Working Hours by <strong>YOURSELF</strong>';
         } else {
           el.textContent = value;
         }

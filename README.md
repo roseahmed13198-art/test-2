@@ -46,3 +46,7 @@ Open `index.html` directly in a browser, or use the **Live Server** extension in
 ## Updating the future instructions link
 
 When the instructions page/PDF/video is ready, replace the disabled `<span class="cta cta-disabled">...</span>` in `index.html` with an `<a>` element and add the URL.
+
+## Language support
+
+The site supports English and Arabic (RTL). The selected language is remembered in the browser.

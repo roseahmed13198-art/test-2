@@ -704,3 +704,107 @@ body.rtl footer {
 .language-switch:hover .lang-target {
   color: var(--purple);
 }
+
+/* Refined Arabic presentation */
+body.rtl .hero-copy h1,
+body.rtl .hero-copy .accent,
+body.rtl .band-heading,
+body.rtl .feature h3,
+body.rtl .feature p,
+body.rtl footer,
+body.rtl .cta {
+  font-family: "Tajawal", "Poppins", sans-serif;
+}
+
+body.rtl .hero-copy h1 {
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+body.rtl .hero-copy .accent {
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+body.rtl .hero-copy .sub {
+  line-height: 1.9;
+  font-weight: 500;
+}
+
+body.rtl .hero-copy .sub strong {
+  font-weight: 800;
+}
+
+body.rtl .hero-copy .sub .or {
+  font-weight: 800;
+  margin: 5px 0;
+}
+
+body.rtl .cta {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+body.rtl .band-heading {
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+body.rtl .feature h3 {
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+body.rtl .feature p {
+  line-height: 1.65;
+}
+
+body.rtl footer nav {
+  font-family: "Tajawal", "Poppins", sans-serif;
+}
+
+@media (min-width: 900px) {
+  body.rtl .hero-copy h1 {
+    font-size: 2.5rem;
+  }
+
+  body.rtl .hero-copy .accent {
+    font-size: 2.45rem;
+  }
+
+  body.rtl .hero-copy .sub {
+    font-size: 1.08rem;
+  }
+
+  body.rtl .cta {
+    font-size: 1rem;
+  }
+
+  body.rtl .band-heading {
+    font-size: 1.25rem;
+  }
+
+  body.rtl .feature h3 {
+    font-size: 1.08rem;
+  }
+
+  body.rtl .feature p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  body.rtl .hero-copy h1,
+  body.rtl .hero-copy .accent {
+    font-size: 1.2rem;
+  }
+
+  body.rtl .hero-copy .sub {
+    font-size: 0.78rem;
+  }
+
+  body.rtl .cta {
+    font-size: 0.8rem;
+  }
+}

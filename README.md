@@ -2,10 +2,12 @@
 
 Bilingual static landing page for GitHub Pages.
 
-- English and Arabic language switch.
-- Arabic uses a true desktop visual mirror: phone moves right and content moves left.
-- Original visual proportions and assets are preserved.
-- Contact links:
-  - WhatsApp: +20 10 44564470
-  - Email: rose.ahmed@thechefz.co
-- New Working Hours link points to the provided Google Apps Script.
+Desktop remains the approved layout. A separate mobile-only layout is added based on the supplied iPhone reference:
+- centered logo and compact contact header
+- mobile title and stacked CTA buttons
+- supplied mobile banner image
+- vertical benefit cards
+- orange scalloped mobile footer
+- Arabic language support remains available
+- WhatsApp: +20 10 44564470
+- Email: rose.ahmed@thechefz.co

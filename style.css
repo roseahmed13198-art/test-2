@@ -680,3 +680,338 @@ body.rtl .feature h3,
 body.rtl .feature p {
   font-family: "Tajawal", "Poppins", sans-serif;
 }
+
+/* =========================================================
+   THE CHEFZ MOBILE VIEW
+   Fully isolated with tc-mobile-* selectors.
+   Desktop styles above remain unchanged.
+   ========================================================= */
+
+.tc-mobile-site {
+  --tc-purple: #3D1A3D;
+  --tc-orange: #EF5B16;
+  --tc-mauve: #755375;
+  --tc-white: #FFFFFF;
+  display: none;
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #F7F7F7;
+  color: var(--tc-purple);
+  font-family: "Poppins", "Tajawal", sans-serif;
+  overflow: hidden;
+}
+
+.tc-mobile-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 22px 8px;
+}
+
+.tc-mobile-logo {
+  display: block;
+  width: 92px;
+  height: auto;
+}
+
+.tc-mobile-contacts {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.tc-mobile-contact {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 1.5px solid var(--tc-orange);
+  border-radius: 1px;
+  text-decoration: none;
+}
+
+.tc-mobile-contact svg {
+  width: 22px;
+  height: 22px;
+}
+
+.tc-mobile-mail {
+  color: var(--tc-orange);
+}
+
+.tc-mobile-wa {
+  color: #20c463;
+  border-color: #20c463;
+}
+
+.tc-mobile-intro {
+  text-align: center;
+  padding: 10px 22px 0;
+}
+
+.tc-mobile-intro h2 {
+  margin: 0 0 5px;
+  color: var(--tc-purple);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tc-mobile-intro h1 {
+  margin: 0 0 12px;
+  color: var(--tc-orange);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.tc-mobile-copy {
+  margin: 0;
+  color: var(--tc-purple);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.48;
+}
+
+.tc-mobile-copy strong {
+  font-weight: 700;
+}
+
+.tc-mobile-copy span {
+  display: block;
+  margin: 0;
+  color: var(--tc-orange);
+  font-weight: 700;
+}
+
+.tc-mobile-actions {
+  padding: 38px 41px 23px;
+}
+
+.tc-mobile-action {
+  min-height: 56px;
+  width: 100%;
+  margin: 0 0 38px;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #FFF9F7;
+  border: 1.5px solid var(--tc-orange);
+  border-radius: 12px;
+  color: var(--tc-purple);
+  text-decoration: none;
+}
+
+.tc-mobile-action:last-child {
+  margin-bottom: 0;
+}
+
+.tc-mobile-action-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tc-mobile-action-main img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+  flex: 0 0 23px;
+}
+
+.tc-mobile-chevron {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
+.tc-mobile-disabled {
+  cursor: default;
+}
+
+.tc-mobile-banner {
+  padding: 0 15px;
+}
+
+.tc-mobile-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 21px;
+}
+
+.tc-mobile-features {
+  padding: 39px 32px 31px;
+}
+
+.tc-mobile-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.tc-mobile-feature > img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex: 0 0 40px;
+}
+
+.tc-mobile-feature h3 {
+  margin: 0 0 3px;
+  color: var(--tc-purple);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tc-mobile-feature p {
+  margin: 0;
+  max-width: 225px;
+  color: var(--tc-purple);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.tc-mobile-separator {
+  height: 1px;
+  margin: 18px 0 18px 55px;
+  background: rgba(239, 91, 22, .30);
+}
+
+.tc-mobile-footer {
+  position: relative;
+  margin-top: 2px;
+  min-height: 92px;
+  background: var(--tc-orange);
+  text-align: center;
+}
+
+.tc-mobile-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -25px;
+  height: 45px;
+  background:
+    radial-gradient(circle 67px at 16.5% 100%, var(--tc-orange) 0 99%, transparent 100%),
+    radial-gradient(circle 67px at 50% 100%, var(--tc-orange) 0 99%, transparent 100%),
+    radial-gradient(circle 67px at 83.5% 100%, var(--tc-orange) 0 99%, transparent 100%);
+}
+
+.tc-mobile-footer-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 8px;
+}
+
+.tc-mobile-footer h2 {
+  margin: 0 0 5px;
+  color: var(--tc-purple);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.tc-mobile-footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tc-mobile-footer b {
+  font-weight: 700;
+}
+
+/* Mobile breakpoint: desktop site disappears; mobile site appears. */
+@media (max-width: 899px) {
+  .desktop-site {
+    display: none !important;
+  }
+
+  .tc-mobile-site {
+    display: block;
+  }
+
+  body {
+    display: block;
+    min-height: 100vh;
+    background: #F7F7F7;
+  }
+
+  body.rtl .tc-mobile-site {
+    font-family: "Tajawal", "Poppins", sans-serif;
+  }
+
+  body.rtl .tc-mobile-topbar {
+    direction: rtl;
+  }
+
+  body.rtl .tc-mobile-contacts {
+    direction: ltr;
+  }
+
+  body.rtl .tc-mobile-intro,
+  body.rtl .tc-mobile-feature,
+  body.rtl .tc-mobile-action {
+    direction: rtl;
+  }
+
+  body.rtl .tc-mobile-feature {
+    text-align: right;
+  }
+
+  body.rtl .tc-mobile-feature p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body.rtl .tc-mobile-separator {
+    margin-left: 0;
+    margin-right: 59px;
+  }
+
+  body.rtl .tc-mobile-chevron {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 900px) {
+  .tc-mobile-site {
+    display: none !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .tc-mobile-topbar {
+    padding-inline: 17px;
+  }
+
+  .tc-mobile-actions {
+    padding-inline: 32px;
+  }
+
+  .tc-mobile-action-main {
+    font-size: 14px;
+  }
+
+  .tc-mobile-features {
+    padding-inline: 26px;
+  }
+}

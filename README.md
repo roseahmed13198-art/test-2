@@ -1,11 +1,11 @@
-# THE CHEFZ Working Hours
+# THE CHEFZ — Desktop + Mobile
 
-Bilingual static landing page for GitHub Pages.
+This package merges the supplied desktop view with the mobile view.
 
-- English and Arabic language switch.
-- Arabic uses a true desktop visual mirror: phone moves right and content moves left.
-- Original visual proportions and assets are preserved.
-- Contact links:
-  - WhatsApp: +20 10 44564470
-  - Email: rose.ahmed@thechefz.co
-- New Working Hours link points to the provided Google Apps Script.
+- Desktop is shown at 900px and above.
+- Mobile is shown below 900px.
+- Mobile CSS uses only `tc-mobile-*` selectors and does not override desktop component classes.
+- Existing desktop bilingual/language behavior and links are preserved.
+- Mobile uses the supplied mobile banner and existing logo/icons from the project.
+
+Open `index.html` to run.

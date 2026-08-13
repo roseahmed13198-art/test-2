@@ -46,3 +46,6 @@ Open `index.html` directly in a browser, or use the **Live Server** extension in
 ## Updating the future instructions link
 
 When the instructions page/PDF/video is ready, replace the disabled `<span class="cta cta-disabled">...</span>` in `index.html` with an `<a>` element and add the URL.
+
+
+Arabic mode mirrors the desktop composition (left/right) while preserving natural RTL text flow.
